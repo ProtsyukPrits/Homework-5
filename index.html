@@ -26,7 +26,7 @@
             <a class="logo" href="/">
                 <span class="logo-web">Web</span> <span class="logo-studio-black">Studio</span>
             </a>
-
+        
 
 
             <ul class="top-button">
@@ -65,8 +65,8 @@
         <!--Кнопка услуги-->
         <section class="main-box">
             <h1 class="main-service">Эффективные решения для вашего бизнеса</h1>
-            <a href="/"> <button type="button" class="main-button">Заказать услугу</button></a>
-        </section>
+            <a> <button data-modal-open class="main-button">Заказать услугу</button></a>
+            </section>
         <!--Особенности-->
 
         <section class="benefits container">
@@ -411,7 +411,17 @@
                 </section>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+    
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-icons" width="11px" height="11px">
+                    <use href="./images/vector.svg"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
